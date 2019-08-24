@@ -1,3 +1,4 @@
+[![Build Status](https://dev.azure.com/sap/NAASCDP-Azurepipeline/_apis/build/status/vinromarin.pipelines-java?branchName=master)](https://dev.azure.com/sap/NAASCDP-Azurepipeline/_build/latest?definitionId=54&branchName=master)
 
 # Contributing
 
