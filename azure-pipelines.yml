@@ -37,3 +37,17 @@ steps:
     summaryFileLocation: "$(System.DefaultWorkingDirectory)/**/site/jacoco/jacoco.xml"
     reportDirectory: "$(System.DefaultWorkingDirectory)/**/site/jacoco"
     failIfCoverageEmpty: true
+
+- stage: deploy
+  jobs:
+  - deployment: DeployWeb
+    displayName: deploy Web App
+    pool:
+      vmImage: 'Ubuntu-16.04'
+    # creates an environment if it doesn't exist
+    environment: 'smarthotel-dev'
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - script: echo Hello world
