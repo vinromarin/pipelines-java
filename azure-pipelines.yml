@@ -23,6 +23,6 @@ pool:
 stages:
 - stage: Test
   jobs:
-  - job: TestMsg
+  - job: TestOnWindows
     steps:
-    - script: echo Testing!
+    - script: echo Testing on Windows!
