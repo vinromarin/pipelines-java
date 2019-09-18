@@ -23,3 +23,10 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
+
+- task: BatchScript@1
+  inputs:
+    filename: 'git'
+    arguments: 'clone https://github.com/SAP/jenkins-library.git'
+
+
