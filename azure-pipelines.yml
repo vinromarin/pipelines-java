@@ -21,8 +21,8 @@ pool:
   name: "cc-eu-de2-ubuntu-16-04"
 
 steps:
-- script: git
-  displayName: 'Run a one-line script'
+- script: git clone https://github.com/SAP/jenkins-library.git
+  displayName: 'Clone git repo'
 
 
 
