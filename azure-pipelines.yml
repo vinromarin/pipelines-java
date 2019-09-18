@@ -20,9 +20,9 @@ pool:
   #vmImage: "ubuntu-16.04" #$(imageName)
   name: "cc-eu-de2-ubuntu-16-04"
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+#steps:
+#- script: echo Hello, world!
+#  displayName: 'Run a one-line script'
 
 - task: BatchScript@1
   inputs:
