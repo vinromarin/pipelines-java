@@ -24,7 +24,7 @@ steps:
 - script: git clone https://github.com/SAP/jenkins-library.git
   displayName: 'Clone git repo - Piper outsource'
 
-- script: git clone https://github.com/SAP/jenkins-library.git
+- script: git clone https://github.wdf.sap.corp/ContinuousDelivery/piper-library.git
   displayName: 'Clone git repo - Piper outsource'
 
 
