@@ -26,5 +26,5 @@ jobs:
       uses: sfdx-actions/setup-pmd@v1
     
     - name: Run PMD
-      run: pmd -dir ./src/main -ruleset category/java/bestpractices.xml -format summaryhtml
+      run: pmd -dir ./src/main/java/com/microsoft/demo -ruleset category/java/bestpractices.xml -format summaryhtml
       
