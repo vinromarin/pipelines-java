@@ -39,5 +39,8 @@ jobs:
         name: pmd_report
        # Directory containing files to upload
         path: ./pmd_report.html
+               
+    - name: SonarCloud Scan
+      uses: SonarSource/sonarcloud-github-action@v1.1
       
       
