@@ -30,7 +30,6 @@ jobs:
     
     - name: Run PMD
       run: |
-        pwd
-        ls -la
         pmd -dir src/main/java/com/microsoft/demo/*.java -rulesets category/java/bestpractices.xml -format summaryhtml
+        ls -la
       
