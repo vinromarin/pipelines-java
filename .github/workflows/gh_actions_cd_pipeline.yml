@@ -30,6 +30,6 @@ jobs:
     
     - name: Run PMD
       run: |
-        pmd -dir src/main/java/com/microsoft/demo/*.java -rulesets category/java/bestpractices.xml -format text
+        pmd -dir src/main/java/com/microsoft/demo/*.java -rulesets category/java/bestpractices.xml -failOnViolation false -format html -reportfile ./pmd_report.html
         ls -la
       
