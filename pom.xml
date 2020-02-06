@@ -46,6 +46,11 @@
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-  </properties>
+    <sonar.projectKey>vinromarin_pipelines-java</sonar.projectKey>
+    <sonar.organization>vinromarin</sonar.organization>
+    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+    <sonar.login>$SONAR_TOKEN</sonar.login>
+ </properties>
+
 	
 </project>
