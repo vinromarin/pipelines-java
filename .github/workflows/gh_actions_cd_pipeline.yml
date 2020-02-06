@@ -31,5 +31,13 @@ jobs:
     - name: Run PMD
       run: |
         pmd -dir src/main/java/com/microsoft/demo/*.java -rulesets category/java/bestpractices.xml -failOnViolation false -format html -reportfile ./pmd_report.html
-        ls -la
+        
+    - name: Upload PMD report
+      uses: actions/upload-artifact@v1.0.0
+      with:
+        # Artifact name
+        name: pmd_report
+       # Directory containing files to upload
+        path: ./pmd_report.html
+      
       
